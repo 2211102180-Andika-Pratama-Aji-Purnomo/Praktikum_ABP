@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Interaktif dengan jQuery</title>
+    <!-- Memuat jQuery dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #kotak {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            margin: 20px 0;
+        }
+        #tombol {
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Selamat Datang di Demo jQuery</h2>
+<button id="tombol">Klik untuk Animasi</button>
+<div id="kotak"></div>
+
+<script>
+    $(document).ready(function() {
+        $('#tombol').click(function() {
+            $('#kotak').animate({
+                left: '250px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'
+            }, 1000);
+        });
+    });
+</script>
+
+</body>
+</html>
