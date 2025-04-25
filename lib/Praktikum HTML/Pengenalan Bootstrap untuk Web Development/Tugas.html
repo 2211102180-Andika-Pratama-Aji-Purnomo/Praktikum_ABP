@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Sederhana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Card Section -->
+  <div class="container my-5">
+    <div class="card mx-auto" style="max-width: 30rem;">
+      <img src="welcome.jpg" width="150" alt="Deskripsi gambar">
+      <div class="card-body">
+        <h5 class="card-title">Selamat Datang!</h5>
+        <p class="card-text">Ini adalah halaman web sederhana yang dibuat dengan Bootstrap. Cocok untuk latihan atau portfolio awal.</p>
+        <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Kontak -->
+  <div class="container mb-5" id="kontak">
+    <h2 class="mb-4 text-center">Hubungi Kami</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@email.com">
+      </div>
+      <div class="mb-3">
+        <label for="pesan" class="form-label">Pesan</label>
+        <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Kirim</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 MySite. Dibuat dengan 💖 dan Bootstrap.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
